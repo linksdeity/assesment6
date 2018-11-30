@@ -8,18 +8,18 @@
 
 <p>Please enter the required information below...</p>
 
-<form action="/Home/Confirmation" method="post">
+<form action="/Home/Confirmation" method="post" onsubmit="return ValidateForm()">
     <br />
     <p>FIRST NAME</p>
-    <input type="text" name="FirstName" required />
+    <input type="text" id="firstname"name="FirstName" required />
     <br /><br />
 
     <p>LAST NAME</p>
-    <input type="text" name="LastName" required />
+    <input type="text" id="lastname "name="LastName" required />
     <br /><br />
 
     <p>EMAIL</p>
-    <input type="email" name="Email" required />
+    <input type="email" id="email "name="Email" required />
     <br /><br />
 
     <p>Will you be attending?</p>

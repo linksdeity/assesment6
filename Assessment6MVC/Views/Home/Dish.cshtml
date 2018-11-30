@@ -6,3 +6,54 @@
 
 <h2>Dish</h2>
 
+<p>Please enter the required information below...</p>
+
+<form action="/Home/DishConfirmation" method="post">
+    <br />
+    <p>FIRST NAME</p>
+    <input type="text" name="FirstName" required />
+    <br /><br />
+
+    <p>LAST NAME</p>
+    <input type="text" name="LastName" required />
+    <br /><br />
+
+    <p>PHONE</p>
+    <input type="tel" name="Phone" required />
+    <br /><br />
+
+    <p>DISH NAME</p>
+    <input type="text" name="Dish" required />
+    <br /><br />
+
+    <p>DISH DESCRIPTION</p>
+    <input type="text" name="Description" required />
+    <br /><br />
+
+
+
+    <div>
+        <input type="radio" id="meat" name="Option" value="Meat"
+                checked>
+        <label for="huey">MEAT</label>
+    </div>
+
+    <div>
+        <input type="radio" id="veg" name="Option" value="Veg">
+        <label for="dewey">VEG</label>
+    </div>
+
+    <div>
+        <input type="radio" id="glutten free" name="Option" value="Glutten Free">
+        <label for="louie">GLUTTEN FREE</label>
+    </div>
+
+
+
+ 
+
+
+        <input type="submit" class="btn-warning" />
+
+
+</form>

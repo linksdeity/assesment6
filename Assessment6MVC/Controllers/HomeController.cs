@@ -39,7 +39,10 @@ namespace Assessment6MVC.Controllers
 
 
 
-
+        public ActionResult DishConfirmation(DishUser user)
+        {
+            return View(user);
+        }
 
     }
 }
