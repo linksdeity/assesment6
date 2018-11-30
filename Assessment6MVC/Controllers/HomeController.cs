@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Assessment6MVC.Models;
 
 namespace Assessment6MVC.Controllers
 {
@@ -13,18 +14,32 @@ namespace Assessment6MVC.Controllers
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
 
+
+
+        public ActionResult Register()
+        {
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
 
+
+
+        public ActionResult Dish()
+        {
             return View();
         }
+
+
+
+        public ActionResult Confirmation(User user)
+        {
+            return View(user);
+        }
+
+
+
+
+
     }
 }

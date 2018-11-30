@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Register</h2>
+
+<p>Please enter the required information below...</p>
+
+<form action="/Home/Confirmation" method="post">
+    <br />
+    <p>FIRST NAME</p>
+    <input type="text" name="FirstName" required />
+    <br /><br />
+
+    <p>LAST NAME</p>
+    <input type="text" name="LastName" required />
+    <br /><br />
+
+    <p>EMAIL</p>
+    <input type="email" name="Email" required />
+    <br /><br />
+
+    <p>Will you be attending?</p>
+    <input type="checkbox" name="Attending" id="GoingBox" onclick="Going()" />
+    <p>Check for YES!</p>
+    <br /><br />
+
+    <div id="DatePicker" class="hidden">
+
+        <p>Which day would you like to attend?</p>
+        <input type="date" min="2018-12-19" max="2018-12-20" name="Date" required />
+        <br /><br />
+
+        <p>Will you be bringing one extra?</p>
+        <input type="checkbox" name="Guest" value="true" id="ExtraBox" onclick="Going()" />
+        <p>Check for YES!</p>
+        <br />
+        <input type="submit" class="btn-warning" />
+
+    </div>
+
+</form>
+
+<button type="button" id="NotGoing">Submit</button>
+
+
