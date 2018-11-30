@@ -8,18 +8,18 @@
 
 <h2>Confirmation</h2>
 
-<p>Way to go, @(Model.FirstName + " " + Model.LastName + "!")</p>
+    <p>Way to go, @(Model.FirstName + " " + Model.LastName + "!")</p>
 
-<p>Email: @Model.Email</p>
+    <p>Email: @Model.Email</p>
 
-<p>You have signed up to go on: @Model.Date</p>
+    <p>You have signed up to go on: @Model.Date</p>
 
-<p>You are</p>
+    <p>You are</p>
     
-    @{ 
-        if(Model.Guest != true)
-        {
-           <p>NOT</p>
+        @{ 
+            if(Model.Guest != true)
+            {
+               <p>NOT</p>
+            }
         }
-    }
-<p>bringing a guest!</p>
+    <p>bringing a guest!</p>
