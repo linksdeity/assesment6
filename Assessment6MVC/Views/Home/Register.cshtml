@@ -8,7 +8,7 @@
 
 <p>Please enter the required information below...</p>
 
-<form action="/Home/Confirmation" method="post" onsubmit="return ValidateForm()">
+<form action="/Home/Confirmation" method="post" onsubmit="return ValidateForm()" name="RegisterForm" class="holidaycheer">
     <br />
     <p>FIRST NAME</p>
     <input type="text" id="firstname"name="FirstName" required />
@@ -43,6 +43,6 @@
 
 </form>
 
-<button type="button" id="NotGoing">Submit</button>
+<a href="~/Home/Index/"><button type="button" id="NotGoing" onclick="AlertMe()">Submit</button></a>
 
 

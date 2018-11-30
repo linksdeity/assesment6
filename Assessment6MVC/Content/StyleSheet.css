@@ -2,3 +2,10 @@
 .hidden{
     visibility:hidden;
 }
+
+
+.holidaycheer{
+    color:red;
+    background-color:green;
+    font-weight:bolder;
+}

@@ -8,37 +8,40 @@
     }
 }
 
-function validateForm() {
+function ValidateForm() {
 
     var email = document.getElementById('email').value;
-    var emailRGEX = /\S+@\S+\.\S+/;
+    var emailRGEX = /[^@]+@[^\.]+\..+/;
     var emailResult = emailRGEX.test(email);
 
-    if (emailResult == false) {
-        alert("email:" + emailResult);
+    if (emailResult === false) {
+        alert("email is incorrect");
         return false;
     }
 
-    var firstnameNumber = document.getElementById('firstname').value;
+    var firstname = document.getElementById('firstname').value;
     var firstnameRGEX = /^[A-Z][a-z]+$/;
-    var firstnameResult = firstnameRGEX.test(firstnameNumber);
-    alert("firstname:" + firstnameResult);
+    var firstnameResult = firstnameRGEX.test(firstname);
 
-    if (firstnameResult == false) {
-        alert("email:" + firstnameResult);
+    if (firstnameResult === false) {
+        alert("firstname is incorrect!");
         return false;
     }
 
-    var lastnameNumber = document.getElementById('lastname').value;
+    var lastname = document.getElementById('lastname').value;
     var lastnameRGEX = /^[A-Z][a-z]+$/;
-    var lastnameResult = lastnameRGEX.test(lastnameNumber);
-    alert("lastname:" + lastnameResult);
+    var lastnameResult = lastnameRGEX.test(lastname);
 
-    if (lastnameResult == false) {
-        alert("email:" + lastnameResult);
+    if (lastnameResult === false) {
+        alert("lastname is incorrect");
         return false;
     }
 
 
 
+}
+
+
+function AlertMe() {
+    alert("You are NOT going!!!");
 }
